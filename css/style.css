@@ -1,0 +1,57 @@
+.audio-bg {
+    background: url(../img/maxresdefault.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 108px 0;
+    position: relative;
+}
+.audio-bg audio {
+    margin-bottom: 272px;
+}
+.audio-bg a.b {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px;
+    color: #70a1ff;
+    background: #00558c;
+    position: relative;
+    bottom: 206px;
+    right: 290px;
+}
+.audio-bg a.b:hover {
+    background: #0780d131;
+}
+.audio-bg a.a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px;
+    color: #fd9644;
+    background: #f7b731;
+    position: relative;
+    bottom: 206px;
+    right: 290px;
+}
+.audio-bg a.a:hover {
+    background: #ecac2252;
+}
+.audio-bg a.c {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px;
+    color: #eb3b5a;
+    background: #fc5c65;
+    position: relative;
+    bottom: 206px;
+    right: 290px;
+}
+.audio-bg a.c:hover {
+    background: #f1424a75;
+}
+.video-bg {
+    background: url(../img/download.jpg);
+    background-position: center;
+    background-size: cover;
+}
