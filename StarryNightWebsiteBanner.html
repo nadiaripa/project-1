@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Starry-Night-Website-Banner</title>
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<iframe style="display: none;" width="853" height="480" src="https://youtu.be/zECvhBy3b94,rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<audio src="audio/apointment-letter.mp3" autoplay></audio>
+	<div id="background">
+		<div class="scene">
+			<div class="moon"></div>
+			<img class="forest" src="img/forest.png">
+			<img class="cloud1" src="img/cloud1.png">
+			<img class="cloud2" src="img/cloud2.png">
+			<img class="cloud3" src="img/cloud3.png">
+			<img class="cloud4" src="img/cloud1.png">
+			<img class="cloud5" src="img/cloud2.png">
+			<img class="cloud6" src="img/cloud3.png">
+		</div>
+	</div>
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div style="z-index: 1000;" id="c"><i class="fas fa-heart"></i></div>
+				</div>
+				<!-- /.col-md-4 -->
+				<div class="col-md-4">
+					<div style="z-index: 1000;" id="b"><i class="fas fa-heart"></i></div>
+				</div>
+				<!-- /.col-md-4 -->
+				<div class="col-md-4">
+					<div style="z-index: 1000;" id="a"><i class="fas fa-heart"></i></div>
+				</div>
+				<!-- /.col-md-4 -->
+			</div>
+			<!-- /.row -->
+			<div style="position: absolute; top: 224px; left: 237px;" class="row">
+				<div class="col-md-6">
+					<div style="z-index: 1000;" id="e"><i class="fas fa-heart"></i></div>
+				</div>
+				<div class="col-md-6">
+					<div style="z-index: 1000;" id="f"><i class="fas fa-heart"></i></div>
+				</div>
+			</div>
+		</div>
+		<!-- /.container- -->
+	</div>
+	<script type="text/javascript">
+		function stars() {
+			let count = 500;
+			let scene = document.querySelector('.scene');
+			let i = 0;
+			while (i < count) {
+				let star = document.createElement("i");
+				let x = Math.floor(Math.random() * window.innerWidth);
+				let y = Math.floor(Math.random() * window.innerheihgt);
+				let duration = Math.random() * 10;
+				let size = Math.random() * 2;
+
+				star.style.left = x + 'px';
+				star.style.top = y + 'px';
+				star.style.width = 1 + size + 'px';
+				star.style.height = 1 + size + 'px';
+
+				star.style.animationDuration = 6 + duration + 's';
+				star.style.animationDealy = duration + 's';
+
+				scene.appendChild(star)
+				i++
+			}
+		}
+		stars()
+	</script>
+</body>
+
+</html>
